@@ -1,38 +1,348 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Clash Display', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  width: 100vw;
+  min-height: 120vh;
+  background-image: url("../public/bg/4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.containerInner{
+  background-image: url("../public/bg/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  color: white;
+
+}
+.startContainer{
+  width: 100%;
+  height: 100vh;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.cityName{
+  color: pink;
+  font-size: 10rem;
+}
+.submit{
+
+  height: 2.3rem;
+  width: 2.3rem;
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.danger{
+  color: yellow;
+}
+.startContainer > h1{
+  font-size: 3rem;
+}
+.startContainer > p{
+  color: white;
+}
+.startContainer > input{
+  width: 30%;
+  background-color: transparent;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+}
+.startContainer > *{
+  line-height: 0.5rem;
+}
+.searchBarDiv{
+  height: 2rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+
+}
+.searchBar{
+  width: 70%;
+  border-radius: 200px;
+}
+.placeTime{
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  align-items: center;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.citySearch{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  align-items: center;
+}
+.placeTime > div >h4{
+  font-size: 1.3rem;
+  color: white;
+}
+.placeTime > div >p{
+  color: white;
+  margin-top: -12px;
+}
+.altsearch{
+
+}
+.currentWeather{
+display: flex;
+width: 50vw;
+justify-content:center;
+flex-direction: column;
+align-items: center;
+margin-top: -1rem;
+background-color: hsl(0 0% 10% / 0.4);
+border-radius: 12px;
+}
+.currentWeather > h1{
+  color: white;
+  font-size: 2.5rem;
+}
+
+.currentWeather > img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.currentWeatherText{
+  color: white;
+  display: flex;
+  justify-content:center;
+flex-direction: column;
+align-items: center;
+line-height: 1px;
+}
+.otherProperties{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45rem;
+  flex-wrap: wrap;
+  height: fit-content;
+  background-color: hsl(0 0% 10% / 0.4);
+  border-radius: 15px;
+  margin-top: 3rem;
+}
+
+.otherProperties > div{
+  margin-left: auto;
+  line-height: 0.3rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 12rem;
+  height: 8rem;
+}
+
+.foreCastButton{
+  width: 19rem;
+  height: 3rem;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+  background-color:#0baeff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.propIcon{
+  width: 4rem;
+  height:4rem;
+  color: #0baeff;
+ }
+ .eachForecast{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width:13rem;
+  background-color: hsl(0 0% 30% / 0.5);
+  border-radius: 10px;
+  line-height: 0.2rem;
+  margin-right: 3rem;
+  margin-top: 3rem;
+ }
+ .eachForecast > h4{
+  line-height: 0.2rem;
+ }
+ .eachForecast > img{
+width: 8rem;
+height: 8rem;
+ }
+ .minMaxContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .minAndMax{
+  margin-right: 0.4rem;
+ }
+ .forecastContainerApp{
+  width: 100%;
+  height: 50%;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ .forecastContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  flex-direction: column;
+ }
+ .forecastInner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 65px;
+  width: 60rem;
+ }
+
+ .forecastContainer > button {
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  position: absolute;
+  left: 1%;
+  top: 2%;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .imgAndTemp{
+display: flex;
+justify-content:space-between;
+align-items: center;
+ }
+
+ .imgAndTemp > img{
+  width: 8rem;
+  height: 8rem;
+ }
+ 
+ @media (max-width: 480px){
+  
+  .currentWeather{
+    display: flex;
+    width: 50vw;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1rem;
+    background-color: hsl(0 0% 10% / 0.4);
+    border-radius: 12px;
+    }
+    
+  .otherProperties{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19rem;
+    flex-wrap: wrap;
+    height: fit-content;
+    background-color: hsl(0 0% 10% / 0.4);
+    border-radius: 15px;
+    margin-top: 3rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  
+  .otherProperties > div{
+    margin-left: auto;
+    line-height: 0.3rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 5rem;
+    height: 9rem;
   }
+
+  .propIcon{
+    width: 2rem;
+    height:2rem;
+    color: #0baeff;
+   }
+
+   .eachForecast{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 8.5rem;
+    height: 13.3rem;
+    background-color: hsl(0 0% 30% / 0.5);
+    border-radius: 10px;
+    line-height: 0.2rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    margin-left: 3px;
+   }
+   .eachForecast > h4{
+    line-height: 0.1rem;
+   }
+
+   .eachForecast > h2 {
+    font-size: 2px;
+   }
+   
+   .imgAndTemp {
+    font-size: 10px;
+   }
+   .minAndMax > h5{
+    font-size: 10px;
+   }
+  
+   .forecastContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+   }
+   .forecastInner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 25px;
+    width: 100vw;
+   }
+
+   .forecastContainerApp{
+    width: 100vw;
+   }
+
+   .imgAndTemp > img{
+    width: 4rem;
+    height: 4rem;
+   }
+    
+  
 }
